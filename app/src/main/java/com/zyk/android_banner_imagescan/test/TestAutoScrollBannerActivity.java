@@ -23,6 +23,9 @@ import com.zyk.android_banner_imagescan.widget.AutoScrollBannerImageAdapter;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * AutoScrollBanner 使用的Demo
+ */
 public class TestAutoScrollBannerActivity extends AppCompatActivity {
 
     private AutoScrollBanner mAutoScrollBanner;

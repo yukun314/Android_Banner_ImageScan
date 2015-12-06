@@ -26,6 +26,9 @@ import com.zyk.android_banner_imagescan.widget.AutoScrollBannerAdapter;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * ImageViewScan 使用的Demo
+ */
 public class TestImageScanActivity extends AppCompatActivity {
 
     private ImageViewScan mImageViewScan;
