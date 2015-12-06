@@ -1,0 +1,13 @@
+<!--
+  ~ Copyright (c) 2015.
+  ~ 创建:朱玉坤
+  ~ 时间:2015-12-06
+  -->
+
+<resources>
+    <string name="app_name">Android_Banner_ImageScan</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_test">TestActivity</string>
+    <string name="title_activity_test_auto_scroll_banner">testbanner</string>
+    <string name="title_activity_test_image_scan">TestImageScanActivity</string>
+</resources>
