@@ -39,7 +39,6 @@ import android.widget.TextView;
 
 /**
  * 异步图片浏览
- *
  * @author zyk
  *
  */
@@ -149,7 +148,9 @@ public class ImageViewScan extends LinearLayout {
      *            background
      */
     public void setBackground(Drawable background) {
-        bg.setBackground(background);
+        //Add by API Level 16
+//        bg.setBackground(background);
+        bg.setBackgroundDrawable(background);
     }
 
     /**

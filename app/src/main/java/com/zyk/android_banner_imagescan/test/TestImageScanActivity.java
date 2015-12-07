@@ -45,15 +45,11 @@ public class TestImageScanActivity extends AppCompatActivity {
         mImageViewScan = (ImageViewScan) findViewById(R.id.activity_image_scan);
         List<Object> list = new ArrayList<Object>();
         list.add(R.drawable.test);
-        list.add(R.drawable.test1);
-        list.add(R.drawable.test2);
         list.add("http://www.8kmm.com/UploadFiles/2012/8/201208140920132659.jpg");
+        list.add(R.drawable.test1);
         list.add("http://f.hiphotos.baidu.com/image/h%3D200/sign=1478eb74d5a20cf45990f9df460b4b0c/d058ccbf6c81800a5422e5fdb43533fa838b4779.jpg");
-//		AutoScrollBannerImageAdapter adapter = new AutoScrollBannerImageAdapter(MainActivity.this, list);
-//		mImageViewScan.setAdapter(adapter);
+        list.add(R.drawable.test2);
         mImageViewScan.setData(list);
-//		mImageViewScan.startTurning(2000);
-//		mImageViewScan.setPageIndicator(new int[]{R.drawable.ic_page_indicator,R.drawable.ic_page_indicator_focused});
         mImageViewScan.setPageTransformer(Transformer.DefaultTransformer);
         mImageViewScan.setBackgroundColor(Color.rgb(100, 100, 100));
 
@@ -81,8 +77,6 @@ public class TestImageScanActivity extends AppCompatActivity {
             }
         });
         initMenu();
-
-//		mImageViewScan.setHide(true);
     }
 
     private void initMenu(){
@@ -91,7 +85,7 @@ public class TestImageScanActivity extends AppCompatActivity {
         close.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(TestImageScanActivity.this, "position:" + mImageViewScan.getCurrentPosition() + " bitmap:" + mImageViewScan.getCurrentBitmap(), Toast.LENGTH_SHORT).show();;
+               TestImageScanActivity.this.finish();
             }
         });
         mShowInfo = (TextView) menuTop.findViewById(R.id.menu_top_text);

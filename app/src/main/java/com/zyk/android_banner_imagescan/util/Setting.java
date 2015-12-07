@@ -97,18 +97,11 @@ public class Setting {
 
 	private File getSDPath() {
 		File sdDir = null;
-//		boolean sdCardExist = Environment.getExternalStorageState().equals(
-//				Environment.MEDIA_MOUNTED); // 判断sd卡是否存在
-//		if (sdCardExist) {
-//			sdDir = Environment.getExternalStorageDirectory();// 获取跟目录
-//		}
 		String path = Paths.cardDirectory();
-//		System.out.println("path:"+path);
-		sdDir = new File(path, "filmTelevision/cache");
+		sdDir = new File(path, "ImageScan/cache");
 		if (!sdDir.exists()) {
 			sdDir.mkdirs();
 		}
-//		System.out.println("sdDir:"+sdDir.getAbsolutePath());
 		return sdDir;
 	}
 }

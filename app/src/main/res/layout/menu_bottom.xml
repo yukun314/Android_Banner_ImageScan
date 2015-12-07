@@ -21,7 +21,7 @@
             android:layout_height="32dp"
             android:layout_centerInParent="true"
             android:scaleType="fitXY"
-            android:src="@drawable/ic_stub" />
+            android:src="@drawable/download" />
     </RelativeLayout>
 
     <RelativeLayout
@@ -35,6 +35,6 @@
             android:layout_height="32dp"
             android:layout_centerInParent="true"
             android:scaleType="fitXY"
-            android:src="@drawable/ic_error" />
+            android:src="@drawable/share" />
     </RelativeLayout>
 </RelativeLayout>
