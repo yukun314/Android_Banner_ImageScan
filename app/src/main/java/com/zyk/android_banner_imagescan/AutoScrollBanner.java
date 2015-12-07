@@ -44,6 +44,8 @@ public class AutoScrollBanner extends LinearLayout{
     //指示点的大小
     private int side = 0;
 
+    private Context mContext;
+
     private OnPageChangeListener mPageChangeListener = null;
 
     /**
@@ -65,6 +67,7 @@ public class AutoScrollBanner extends LinearLayout{
 
     public AutoScrollBanner(Context context) {
         super(context);
+        mContext = context;
         init(context);
     }
 
@@ -75,6 +78,7 @@ public class AutoScrollBanner extends LinearLayout{
      */
     public AutoScrollBanner(Context context, AttributeSet attrs) {
         super(context, attrs);
+        mContext = context;
         init(context);
     }
 
@@ -183,6 +187,11 @@ public class AutoScrollBanner extends LinearLayout{
 //    			lp.height = side;
 //    			lp.width = side;
                 pointView.setLayoutParams(lp);
+            }else{
+                float scale = mContext.getResources().getDisplayMetrics().density;
+                int side = Math.round(15*scale);
+                LayoutParams lp = new LayoutParams(side,side);
+                pointView.setLayoutParams(lp);
             }
             pointView.setPadding(5, 0, 5, 0);
             if (mPointViews.isEmpty())
@@ -289,27 +298,7 @@ public class AutoScrollBanner extends LinearLayout{
         mOnItemClickListener = listener;
     }
 
-//	private void init(Context context){
-////		int layout = getResources().getIdentifier("include_viewpager", "layout", context.getPackageName());
-//		View hView = LayoutInflater.from(context).inflate(
-//                R.layout.include_viewpager,null);
-////		View hView = LayoutInflater.from(context).inflate(layout,null);
-//        viewPager = (LoopViewPager) hView.findViewById(R.id.loopViewPager);
-//        loPageTurningPoint = (ViewGroup) hView
-//                .findViewById(R.id.loPageTurningPoint);
-//        bg = (RelativeLayout) hView.findViewById(R.id.include_viewpager_bg);
-//		initViewPagerScroll();
-//		this.addView(hView);
-//	}
-
     private void init(Context context){
-//		View hView = LayoutInflater.from(context).inflate(
-//                R.layout.include_viewpager,null);
-//        viewPager = (LoopViewPager) hView.findViewById(R.id.loopViewPager);
-//        loPageTurningPoint = (ViewGroup) hView
-//                .findViewById(R.id.loPageTurningPoint);
-//        bg = (RelativeLayout) hView.findViewById(R.id.include_viewpager_bg);
-
         bg = new RelativeLayout(context);
         bg.setLayoutParams(new LayoutParams(LayoutParams.MATCH_PARENT,LayoutParams.MATCH_PARENT));
 
