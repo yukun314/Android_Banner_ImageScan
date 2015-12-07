@@ -9,6 +9,7 @@
     效果图：
     ![image](https://github.com/yukun314/Android_Banner_ImageScan/raw/master/preview/banner.gif)
 
+
 使用了三个开源项目:
     1.Android_Universal_Image_Loader 异步加载图片。原项目地址：https://github.com/nostra13/Android-Universal-Image-Loader
     2.GestureImageView 可缩放的ImageView。原项目地址：https://github.com/jasonpolites/gesture-imageview
