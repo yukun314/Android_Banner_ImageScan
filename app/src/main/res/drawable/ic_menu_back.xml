@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<<<<<<< HEAD
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:state_pressed="true"
@@ -7,3 +8,9 @@
         android:state_pressed="false"
         android:drawable="@drawable/ic_menu_back_shelf2"/>
 </selector>
+=======
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:state_pressed="true" android:drawable="@drawable/ic_menu_back_shelf1"/>
+    <item android:state_pressed="false" android:drawable="@drawable/ic_menu_back_shelf2"/>
+</selector>
+>>>>>>> 5e604cf7c0dacc461ae14ac8be31a20c11b90585
