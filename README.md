@@ -67,6 +67,6 @@ mAutoScrollBanner.setPageTransformer(Transformer.DefaultTransformer);//翻页动
     看到这里有没有感觉这两个东东使用起来也太简单了吧，没错就是这么简单...
         
 ###Thanks:
-    1. Android_Universal_Image_Loader 异步加载图片。[项目地址](https://github.com/nostra13/Android-Universal-Image-Loader)
-    2. GestureImageView 可缩放的ImageView。[项目地址](https://github.com/jasonpolites/gesture-imageview)
-    3. 自动轮播Banner，项目地址记不得了(抱歉)。Banner轮播就是在此项目上做了些修改
+######1. Android_Universal_Image_Loader 异步加载图片。[项目地址](https://github.com/nostra13/Android-Universal-Image-Loader)
+######2. GestureImageView 可缩放的ImageView。[项目地址](https://github.com/jasonpolites/gesture-imageview)
+######3. 自动轮播Banner，项目地址记不得了(抱歉)。Banner轮播就是在此项目上做了些修改
