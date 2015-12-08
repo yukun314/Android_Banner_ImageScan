@@ -50,7 +50,7 @@ public class ImageViewScan extends LinearLayout {
     private RelativeLayout mMenuTop, mMenuBottom;
     private AnimationSet mMenuAnimationIn, mMenuAnimationOut;
     private Context mContext;
-    // 上下的menu裁断是否点击才显示
+    // 上下的menup是否点击才显示
     private boolean isHide = false;
 
     private Bitmap[] pics;

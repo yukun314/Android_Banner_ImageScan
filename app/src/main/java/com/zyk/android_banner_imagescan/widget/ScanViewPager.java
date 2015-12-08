@@ -12,12 +12,6 @@ import android.support.v4.view.ViewPager;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 
-/**
- * 
- * @author zyk
- *
- */
-
 public class ScanViewPager extends ViewPager implements OnMovingListener {
 	
 public ScanViewPager(Context context, AttributeSet attrs) {

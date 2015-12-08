@@ -7,7 +7,7 @@
 ###2.自动轮播Banner
     无限循环轮播(头->尾->头->尾...)，可以设置自动翻页的时间，手指触碰则暂停翻页，离开自动开始翻页，
     并且提供多种翻页特效(16种，自己去尝试下吧，也可以自定义哦)。使用起来非常简单(和ListView相似度很高)，网络图片会自动缓存到sdCard上等。<br>
-    效果图：<br>
+    效果图:<br/>
 ![](https://github.com/yukun314/Android_Banner_ImageScan/raw/master/preview/banner.gif )
     <br>
 ###使用了三个开源项目:
